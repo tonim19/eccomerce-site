@@ -21,9 +21,6 @@ class SignIn extends Component {
 
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        // Signed in
-        const user = userCredential.user;
-        // ...
         this.setState({ email: "", password: "" });
       })
       .catch((error) => {
