@@ -1,9 +1,11 @@
+import { useEffect } from "react";
 import { Outlet, Route, Routes, useParams } from "react-router";
 import CollectionsOverview from "../../components/collections-overview/collections-overview";
 import CollectionPage from "../collection/collection";
 
 const ShopPage = () => {
   let params = useParams();
+  useEffect(() => {});
   return (
     <div className="shop-page">
       <Routes>
